@@ -147,7 +147,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hxpkg
           haxelib run hxpkg install
-          haxelib install format
 
       - name: Build HTML5
         run: |
