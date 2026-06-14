@@ -143,10 +143,10 @@ jobs:
 
       - name: Install haxelib dependencies
         run: |
-          haxelib install lime --always
-          haxelib install openfl --always
-          haxelib install flixel --always
-          haxelib run lime setup -y
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null --quiet
+          haxelib install hxpkg
+          haxelib run hxpkg install
 
       - name: Build HTML5
         run: |
